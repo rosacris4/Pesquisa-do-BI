@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
+        integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        #contents{
+            border-style: groove;
+            border-width: 5px;
+        }
+        #lista {
+            background-color: rgb(47, 171, 253);
+            color: azure;
+        }
+        #botao{
+            background-color: rgb(47, 171, 253);
+        }
+        #NBi {
+            background-color: rgb(252, 214, 47);
+        }
+        #resultado{
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="text-center m-5">Pesquisa Pelo Número do BI</h2>
+    <div class=" container card  border my-5 p-5 col-lg-sm-6 " id="contents">
+
+        <div class="row">
+            <div class="col-6 p-2 ">
+                <label for="NBi" class="">
+                    <h3>Número do Bilhete:</h3>
+                </label>
+                <div class=" input-group">
+                    <input type="text" class="card form-control" id="NBi" name="NBi" placeholder="Digita o número do BI">
+                    <div class="card input-group-text" id="botao"><span><i class="bi bi-search"></i></span></div>
+                </div>
+
+            </div>
+            <div class="col-6 p-2" id="resultado">
+                <h3>Resultado da pesquisa:</h3>
+                <div class=" card col-lg-sm-6" style="width: 35rem;" id="lista">
+
+                    <ul class="">
+                        <div>
+                            <label for="nome" class="">Nome:</label> <br>
+                            <li class="" id="nome" value=""></li>
+                        </div>
+                        <div>
+                            <label for="nome_pai" class="">Nome do Pai:</label><br>
+                            <li class="" id="nome_pai" value=""></li>
+                        </div>
+                        <div>
+                            <label for="nome_mae" class="">Nome da Mãe:</label><br>
+                            <li class="" id="nome_mae" value=""></li>
+                        </div>
+                        <div>
+                            <label for="num_bi" class="">Número do B.I:</label><br>
+                            <li class="" id="num_bi" value=""></li>
+                        </div>
+                        <div>
+                            <label for="expData" class="">Data de expiração:</label><br>
+                            <li class="" id="expData" value=""></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"
+        integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="Js.js"></script>
+</body>
+
+</html>
